@@ -1,0 +1,1 @@
+Yêu cầu: kích thước tối thiểu đối với cửa sổ dòng lệnh (đã kiểm tra là) 105 cột x 65 hàng
