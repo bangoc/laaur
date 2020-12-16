@@ -1,15 +1,17 @@
-#Gỡ lỗi mức mã nguồn với gdb
+# Gỡ lỗi mức mã nguồn với gdb
 ## Các yêu cầu môi trường
 **GNU/Linux, ví dụ Ubuntu**
+
 Cần có gcc và gdb, có thể sử dụng apt để cài đặt nếu chưa có:
 	
 	sudo apt-get install gcc gdb
 	
 **Windows**
+
 Có thể sử dụng bản cài đặt TDM-GCC, trong đó đã có gcc và gdb cho Windows. Có thể tham khảo thêm chi tiết ở [C in Windows](https://github.com/bangoc/c-in-windows) 
 
-##1. In nội dung của biến trong gdb
-###1.1. Hàm print của gdb
+## 1. In nội dung của biến trong gdb
+### 1.1. Hàm print của gdb
 Lấy ví dụ một mã nguồn đơn giản và có chút bí ẩn như sau
 	
 	// Tệp arrn.c
@@ -31,6 +33,7 @@ Bạn muốn biết giá trị của biến n và các phần tử của mảng 
 	gdb ./app
 
 **Bước 3.** Các thao tác trong gdb
+
 1. Đặt các điểm tạm dừng để quan sát trước khi bắt đầu chạy chương trình
 ví dụ: b 5 = dừng ở dòng số 5, không yêu cầu tên tệp với chương trình chỉ có một tệp.
 2. Chạy chương trình
@@ -47,7 +50,7 @@ Thông báo
 
 đã đủ trực quan hay chưa? Nếu chưa thì làm thế nào để có được thông báo dễ đọc hơn? Chúng ta xem tiếp ở 1.2.
 
-###1.2. Viết hàm hỗ trợ gỡ rối và sử dụng trong gdb
+### 1.2. Viết hàm hỗ trợ gỡ rối và sử dụng trong gdb
 Chúng ta cập nhật arrn.c, bổ xung thêm một hàm hỗ trợ in ra nội dung mảng theo định dạng ưa nhìn và sử dụng tên mới cho tệp là arrn2.c
 
 	// arrn2.c
