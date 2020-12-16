@@ -30,7 +30,8 @@ Bạn muốn biết giá trị của biến n và các phần tử của mảng 
 
 **Bước 2.** Chạy app với gdb, ví dụ có thể gọi lệnh sau:
 
-	gdb ./app
+*GNU/Linux:* `gdb ./app` \
+*Windows:* `gdb app.exe` 
 
 **Bước 3.** Các thao tác trong gdb
 
@@ -70,9 +71,9 @@ Chúng ta cập nhật arrn.c, bổ xung thêm một hàm hỗ trợ in ra nội
 	11.   return 0;
 	12. }
 
-Để xem nội dung của mảng bằng hàm print_ai, đầu tiên chúng ta vẫn thực hiện các bước tương tự như 1.1.\
+Để xem nội dung của mảng bằng hàm print_ai (đuôi ai có nghĩa là an array of ints) trong gdb, đầu tiên chúng ta vẫn thực hiện các bước tương tự như 1.1.\
 khi chương trình đang tạm dừng, lần này là ở dòng 11, chúng ta gọi hàm print_ai\
-Ví dụ: c print_ai(a, n) = call print_ai(a, n), gọi hàm print_ai (đuôi ai có nghĩa là an array of ints).
+Ví dụ: c print_ai(a, n) = call print_ai(a, n), gọi hàm print_ai.
 
 ![gdb2](resources/gdb2.png  "Sử dụng hàm bổ trợ để in mảng a trong gdb")
 
