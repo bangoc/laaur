@@ -1,4 +1,4 @@
-project(all2 C)
+project(extension C)
 if (${CMAKE_SYSTEM_NAME} STREQUAL Linux)
   add_definitions(-DLINUX)
 elseif (${CMAKE_SYSTEM_NAME} STREQUAL Darwin)
