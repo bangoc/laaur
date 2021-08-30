@@ -1,2 +1,2 @@
-project(all1 C)
+project(iso C)
 add_executable(demo main.c)
