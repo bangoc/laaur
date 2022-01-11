@@ -1,0 +1,4 @@
+Chạy docker ở chế độ tương tác và chia sẻ thư mục hiện hành.
+Lưu ý: thay biến $(image_id) bằng giá trị thực tế.
+
+docker run -it -u bangoc -w ~ --mount type=bind,source="$(pwd)",target=/home/bangoc/shared $(image_id)

@@ -1,0 +1,73 @@
+case 1: ./prog f1 c222222 data/inp1m.txt
+ h222223 h222221 h222225 h222226 h222227 h222229
+  Time: 0:00.10 real,  Memory: 42328 Kb
+Press Enter to continue...
+case 2: ./prog f2 h111111 data/inp1m.txt
+Found: 9
+ c111111 c111112 c111113 c111115 c111116 c111117 c111118 c111119 c111120
+  Time: 0:00.09 real,  Memory: 42380 Kb
+Press Enter to continue...
+case 3: ./prog f3 data/inp1m.txt
+h999999999
+Found: 30
+ c111111111 c111111112 c111111113 c111111115 c111111116 c111111117 c111111118 c111111119 c111111120 c111111121 c111111122 c111111123 c111111125 c111111126 c111111127 c111111128 c111111129 c111111131 c111111132 c111111133 c111111135 c111111136 c111111137 c111111139 c111111150 c111111151 c111111152 c111111153 c111111155 c111111159
+  Time: 0:00.18 real,  Memory: 45080 Kb
+Press Enter to continue...
+case 4: valgrind ./prog f1 c222222 data/inp1m.txt
+==22493== Memcheck, a memory error detector
+==22493== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22493== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==22493== Command: ./prog f1 c222222 data/inp1m.txt
+==22493==
+
+ h222223 h222221 h222225 h222226 h222227 h222229
+==22493==
+==22493== HEAP SUMMARY:
+==22493==     in use at exit: 0 bytes in 0 blocks
+==22493==   total heap usage: 5 allocs, 5 frees, 42,005,672 bytes allocated
+==22493==
+==22493== All heap blocks were freed -- no leaks are possible
+==22493==
+==22493== For counts of detected and suppressed errors, rerun with: -v
+==22493== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+  Time: 0:02.85 real,  Memory: 93176 Kb
+Press Enter to continue...case 5: valgrind ./prog f2 h111111 data/inp1m.txt
+==22496== Memcheck, a memory error detector
+==22496== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22496== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==22496== Command: ./prog f2 h111111 data/inp1m.txt
+==22496==
+
+Found: 9
+ c111111 c111112 c111113 c111115 c111116 c111117 c111118 c111119 c111120
+==22496==
+==22496== HEAP SUMMARY:
+==22496==     in use at exit: 0 bytes in 0 blocks
+==22496==   total heap usage: 8 allocs, 8 frees, 42,005,808 bytes allocated
+==22496==
+==22496== All heap blocks were freed -- no leaks are possible
+==22496==
+==22496== For counts of detected and suppressed errors, rerun with: -v
+==22496== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+  Time: 0:02.87 real,  Memory: 93216 Kb
+Press Enter to continue...case 6: valgrind ./prog f3 data/inp1m.txt
+==22500== Memcheck, a memory error detector
+==22500== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22500== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==22500== Command: ./prog f3 data/inp1m.txt
+==22500==
+
+h999999999
+Found: 30
+ c111111111 c111111112 c111111113 c111111115 c111111116 c111111117 c111111118 c111111119 c111111120 c111111121 c111111122 c111111123 c111111125 c111111126 c111111127 c111111128 c111111129 c111111131 c111111132 c111111133 c111111135 c111111136 c111111137 c111111139 c111111150 c111111151 c111111152 c111111153 c111111155 c111111159
+==22500==
+==22500== HEAP SUMMARY:
+==22500==     in use at exit: 0 bytes in 0 blocks
+==22500==   total heap usage: 72 allocs, 72 frees, 47,283,192 bytes allocated
+==22500==
+==22500== All heap blocks were freed -- no leaks are possible
+==22500==
+==22500== For counts of detected and suppressed errors, rerun with: -v
+==22500== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+  Time: 0:03.91 real,  Memory: 99396 Kb
+Press Enter to continue...
