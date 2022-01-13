@@ -37,11 +37,6 @@ void f1(const char *pid, const char *fname) {
   free_input();
 }
 
-#define to_str(v) (((gtype*)v)->s)
-int gtype_cmp_id(const void *v1, const void *v2) {
-  return strcmp(to_str(v1), to_str(v2));
-}
-
 gvec_t get_by_item(const char *iid) {
   gvec_t v = gvec_create(10, NULL);
   for (int i = 0; i < n; ++i) {
@@ -49,7 +44,7 @@ gvec_t get_by_item(const char *iid) {
       gvec_append(v, gtype_s(pvs[i]));
     }
   }
-  gvec_qsort(v, gtype_cmp_id);
+  gvec_qsort(v, gtype_qsort_s);
   return v;
 }
 
@@ -75,7 +70,7 @@ void f3(const char *fname) {
   for (int i = 0; i < n; ++i) {
     hmap_ires res = hmap_insert(item_pvs, gtype_s(items[i]), gtype_l(1));
     if (!res.inserted) {
-      ++(hmap_value_at(item_pvs, res.idx)->l);
+      ++(res.value->l);
     }
   }
   long max = 0;
