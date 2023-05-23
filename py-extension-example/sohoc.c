@@ -1,3 +1,7 @@
+/*
+ * Minh họa tạo mô-đun mở rộng cho Python bằng C
+ * (C) Nguyễn Bá Ngọc, 2023
+ */
 #include <Python.h>
 
 // Hàm tìm ước số chung lớn nhất

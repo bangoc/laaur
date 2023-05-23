@@ -1,9 +1,0 @@
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/EGG-INFO/PKG-INFO
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/EGG-INFO/SOURCES.txt
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/EGG-INFO/dependency_links.txt
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/EGG-INFO/native_libs.txt
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/EGG-INFO/not-zip-safe
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/EGG-INFO/top_level.txt
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/__pycache__/sohoc.cpython-310.pyc
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/sohoc.cpython-310-x86_64-linux-gnu.so
-/usr/local/lib/python3.10/dist-packages/UNKNOWN-0.0.0-py3.10-linux-x86_64.egg/sohoc.py
